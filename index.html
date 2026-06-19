@@ -21,9 +21,10 @@
             <div class="nav-icons">
                 <img src="magnifying-glass.png" alt="Search" class="nav-icon">
                 <a href="cart.html" style="display:inline-block; line-height:0;">
-                <img src="bag.png" alt="Cart" class="nav-icon"></a>
+                    <img src="bag.png" alt="Cart" class="nav-icon">
+                </a>
                 <img src="user.png" alt="Account" class="nav-icon">
-                <button class="nav-btn-menu" onclick="toggleSidebar()">
+                <button class="nav-btn-menu">
                     <span></span><span></span><span></span>
                 </button>
             </div>
@@ -31,14 +32,14 @@
     </nav>
 
     <aside id="side-navbar" class="sidebar">
-        <button onclick="toggleSidebar()" class="closeBtn">✕</button>
+        <button class="closeBtn">✕</button>
         <ul class="mobile-nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </aside>
-    <div id="overlay" onclick="toggleSidebar()"></div>
+    <div id="overlay"></div>
 
     <main class="global-main-container">
         <section class="hero-showcase-block">
@@ -61,7 +62,7 @@
                     <a href="products.html" class="panel-text-link">Learn more →</a>
                 </div>
                 <div class="panel-img-frame image-contain">
-                    <img src="apple-watch-ultra.png" alt="Apple Watch Ultra 2">
+                    <img src="watch.svg" alt="Apple Watch Ultra 2">
                 </div>
             </div>
 
@@ -71,7 +72,7 @@
                     <p>Pro-level sound.</p>
                 </div>
                 <div class="panel-img-frame image-contain square-frame">
-                    <img src="airpods-pro.png" alt="AirPods Pro">
+                    <img src="airpods pro.jpg" alt="AirPods Pro">
                 </div>
                 <button class="panel-action-btn-dark" onclick="window.location.href='products.html'">Buy Now</button>
             </div>
@@ -82,7 +83,7 @@
                     <p>Light. Bright. Full of might.</p>
                 </div>
                 <div class="panel-img-frame image-contain square-frame">
-                    <img src="ipad-air.png" alt="iPad Air">
+                    <img src="apple.svg" alt="iPad Air">
                 </div>
             </div>
 
@@ -93,7 +94,7 @@
                     <button class="panel-action-btn-outline" onclick="window.location.href='products.html'">Explore MacBook</button>
                 </div>
                 <div class="panel-img-frame image-cover">
-                    <img src="macbook-air.png" alt="MacBook Air 15">
+                    <img src="macbook air.svg" alt="MacBook Air 15">
                 </div>
             </div>
         </section>
@@ -110,7 +111,7 @@
             <div class="accessory-product-grid">
                 <div class="accessory-item-card">
                     <div class="accessory-media-container">
-                        <img src="homepod-mini.png" alt="HomePod mini">
+                        <img src="homepad.svg" alt="HomePod mini">
                     </div>
                     <div class="accessory-meta-details">
                         <h3>HomePod mini</h3>
@@ -121,7 +122,7 @@
 
                 <div class="accessory-item-card">
                     <div class="accessory-media-container">
-                        <img src="magsafe-charger.png" alt="MagSafe Charger">
+                        <img src="charger.svg" alt="MagSafe Charger">
                     </div>
                     <div class="accessory-meta-details">
                         <h3>MagSafe Charger</h3>
@@ -132,7 +133,7 @@
 
                 <div class="accessory-item-card">
                     <div class="accessory-media-container">
-                        <img src="sport-band.png" alt="Sport Band">
+                        <img src="sport.svg" alt="Sport Band">
                     </div>
                     <div class="accessory-meta-details">
                         <h3>Sport Band</h3>
@@ -143,7 +144,7 @@
 
                 <div class="accessory-item-card">
                     <div class="accessory-media-container">
-                        <img src="apple-pencil.png" alt="Apple Pencil">
+                        <img src="apple-pencil.jpg" alt="Apple Pencil">
                     </div>
                     <div class="accessory-meta-details">
                         <h3>Apple Pencil</h3>
@@ -176,11 +177,6 @@
         </div>
     </footer>
 
-    <script>
-        function toggleSidebar() {
-            document.getElementById('side-navbar').classList.toggle('active');
-            document.getElementById('overlay').classList.toggle('active');
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

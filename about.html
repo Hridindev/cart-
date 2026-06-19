@@ -20,9 +20,10 @@
             </div>
             <div class="nav-icons">
                 <img src="magnifying-glass.png" alt="Search" class="nav-icon">
-                <a href="cart.html" style="display:inline-block; line-height:0;"><img src="bag.png" alt="Cart" class="nav-icon"></a>
+                <a href="cart.html" style="display:inline-block; line-height:0;">
+                <img src="bag.png" alt="Cart" class="nav-icon"></a>
                 <img src="user.png" alt="Account" class="nav-icon">
-                <button class="nav-btn-menu" onclick="toggleSidebar()">
+                <button class="nav-btn-menu">
                     <span></span><span></span><span></span>
                 </button>
                 <div class="back-btn-container">
@@ -37,14 +38,14 @@
     </nav>
 
     <aside id="side-navbar" class="sidebar">
-        <button onclick="toggleSidebar()" class="closeBtn">✕</button>
+        <button class="closeBtn">✕</button>
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html" class="active">About</a></li>
         </ul>
     </aside>
-    <div id="overlay" onclick="toggleSidebar()"></div>
+    <div id="overlay"></div>
 
     <main class="global-main-container">
         <header class="about-hero-header">
@@ -58,7 +59,7 @@
                 <h3>Our Mission</h3>
                 <p>To simplify the acquisition of sophisticated technology. We believe that your tools should be as beautiful as the work you create with them. At ee, we eliminate the noise of the retail landscape, offering only the essentials of modern excellence.</p>
                 <div class="card-inner-graphic-frame">
-                    <img src="container.svg" alt="Mission Device Grid Illustration">
+                    <img src="about-1.svg" alt="Mission Device Grid Illustration">
                 </div>
             </div>
 
@@ -70,7 +71,7 @@
 
             <div class="showcase-card feature-sustainability-card">
                 <div class="card-header-icon-wrap">
-                    <img src="Icon (1).png" alt="Sustainability Emblem">
+                    <img src="eco.png" alt="Sustainability Emblem">
                     <h3>Sustainability</h3>
                 </div>
                 <p>Our commitment goes beyond product curation. We utilize carbon-neutral shipping and 100% recyclable packaging for every order. Precision shouldn't cost the planet.</p>
@@ -88,7 +89,7 @@
         </section>
 
         <section class="experience-center-hero-block">
-            <img src="image.png" alt="Physical Showroom Grid" class="experience-bg-cover-media">
+            <img src="about-2.svg" alt="Physical Showroom Grid" class="experience-bg-cover-media">
             <div class="experience-blur-overlay-box">
                 <h2>Experience Center</h2>
                 <p>Visit our physical showrooms in Tokyo, Copenhagen, and London for hands-on technical consultation.</p>
@@ -134,16 +135,11 @@
             <a href="products.html">Shipping</a>
         </div>
         <div class="footer-social-tray">
-            <a href="#" class="social-icon-btn"><img src="twitter.png" alt="twitter"></a>
-            <a href="#" class="social-icon-btn"><img src="instagram.png" alt="instagram"></a>
+            <a href="#" class="social-icon-btn"><img src="share.png" alt="share"></a>
+            <a href="#" class="social-icon-btn"><img src="email.png" alt="email"></a>
         </div>
     </footer>
 
-    <script>
-        function toggleSidebar() {
-            document.getElementById('side-navbar').classList.toggle('active');
-            document.getElementById('overlay').classList.toggle('active');
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

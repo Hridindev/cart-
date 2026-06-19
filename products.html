@@ -22,7 +22,7 @@
                 <img src="magnifying-glass.png" alt="Search" class="nav-icon">
                 <a href="cart.html" style="display:inline-block; line-height:0;"><img src="bag.png" alt="Cart" class="nav-icon"></a>
                 <img src="user.png" alt="Account" class="nav-icon">
-                <button class="nav-btn-menu" onclick="toggleSidebar()">
+                <button class="nav-btn-menu">
                     <span></span><span></span><span></span>
                 </button>
                 <div class="back-btn-container">
@@ -37,14 +37,14 @@
     </nav>
 
     <aside id="side-navbar" class="sidebar">
-        <button onclick="toggleSidebar()" class="closeBtn">✕</button>
+        <button class="closeBtn">✕</button>
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html" class="active">Products</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </aside>
-    <div id="overlay" onclick="toggleSidebar()"></div>
+    <div id="overlay"></div>
 
     <main class="global-main-container">
         <header class="catalog-view-header">
@@ -70,7 +70,7 @@
                     <div class="grid-product-card">
                         <div class="product-card-preview-window">
                             <span class="product-badge-new">New</span>
-                            <img src="macbook-pro.png" alt="MacBook Pro">
+                            <img src="macbook-pro.svg" alt="MacBook Pro">
                         </div>
                         <div class="product-card-meta-info">
                             <h3>MacBook Pro 14”</h3>
@@ -83,7 +83,7 @@
                     </div>
                     <div class="grid-product-card">
                         <div class="product-card-preview-window">
-                            <img src="iphone15-pro.png" alt="iPhone 15 Pro">
+                            <img src="iphone-15 pro.svg" alt="iPhone 15 Pro">
                         </div>
                         <div class="product-card-meta-info">
                             <h3>iPhone 15 Pro</h3>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="grid-product-card">
                         <div class="product-card-preview-window">
-                            <img src="ipad-pro.png" alt="iPad Pro">
+                            <img src="ipad pro.svg" alt="iPad Pro">
                         </div>
                         <div class="product-card-meta-info">
                             <h3>iPad Pro 12.9”</h3>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="grid-product-card">
                         <div class="product-card-preview-window">
-                            <img src="airpods-max.png" alt="AirPods Max">
+                            <img src="airpods-max.svg" alt="AirPods Max">
                         </div>
                         <div class="product-card-meta-info">
                             <h3>AirPods Max</h3>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="grid-product-card">
                         <div class="product-card-preview-window">
-                            <img src="apple-watch-9.png" alt="Apple Watch Series 9">
+                            <img src="apple-watch-9.svg" alt="Apple Watch Series 9">
                         </div>
                         <div class="product-card-meta-info">
                             <h3>Apple Watch Series 9</h3>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="grid-product-card">
                         <div class="product-card-preview-window">
-                            <img src="airpods-pro-2.png" alt="AirPods Pro">
+                            <img src="airpods-pro2.svg" alt="AirPods Pro">
                         </div>
                         <div class="product-card-meta-info">
                             <h3>AirPods Pro</h3>
@@ -166,7 +166,7 @@
                 <button class="promo-action-link-btn" onclick="window.location.href='products.html'">Shop Now</button>
             </div>
             <div class="promo-graphic-frame">
-                <img src="homepod-large.png" alt="HomePod mini Special Feature">
+                <img src="homepad.svg" alt="HomePod mini Special Feature">
             </div>
         </section>
     </main>
@@ -192,11 +192,6 @@
         </div>
     </footer>
 
-    <script>
-        function toggleSidebar() {
-            document.getElementById('side-navbar').classList.toggle('active');
-            document.getElementById('overlay').classList.toggle('active');
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
