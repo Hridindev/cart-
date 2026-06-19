@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ee | Shopping Cart</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <img src="ee logo.png" alt="ee logo">
+            </div>
+
+            <div class="checkout-pipeline-steps-container">
+                <div class="pipeline-step-item">
+                    <input type="radio" name="checkout-progress" id="step-cart" checked>
+                    <label for="step-cart">Cart</label>
+                </div>
+                <span class="pipeline-step-separator"></span>
+                <div class="pipeline-step-item">
+                    <input type="radio" name="checkout-progress" id="step-checkout">
+                    <label for="step-checkout">Checkout</label>
+                </div>
+                <span class="pipeline-step-separator"></span>
+                <div class="pipeline-step-item">
+                    <input type="radio" name="checkout-progress" id="step-payment">
+                    <label for="step-payment">Payment</label>
+                </div>
+            </div>
+            <div class="back-btn-container">
+                <a href="home.html" class="back-btn-link">
+                    <button class="back-btn" aria-label="Go back to home">
+                        <img src="back-arrows.png" alt="back-arrow">
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="nav-icons">
+                <button class="nav-btn-menu" onclick="toggleSidebar()">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="side-navbar" class="sidebar">
+        <button onclick="toggleSidebar()" class="closeBtn">✕</button>
+        <ul class="mobile-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </aside>
+    <div id="overlay" onclick="toggleSidebar()"></div>
+
+    <main class="global-main-container">
+        <div class="checkout-split-workspace-layout">
+
+            <div class="checkout-items-left-pane">
+
+
+                <section class="cart-listing-card-block">
+                    <div class="cart-view-header">
+                        <h1 class="cart-main-title">Cart <span class="cart-total-badge">(2 products)</span></h1>
+                        <button class="clear-cart-trigger"><span class="delete-icon">X</span>Clear cart </button>
+                    </div>
+                    <div class="cart-pane-header-row">
+                        <span class="col-head-product">Product</span>
+                        <span class="col-head-count">Count</span>
+                        <span class="col-head-price">Price</span>
+                    </div>
+
+                    <div class="cart-items-interactive-list">
+                        <div class="cart-product-item-row">
+                            <div class="cart-item-identity-wrap">
+                                <div class="cart-item-thumbnail-box bg-white">
+                                    <img src="airpods pro.jpg" alt="AirPods Pro">
+                                </div>
+                                <div class="cart-item-text-details">
+                                    <h4>Apple AirPods Pro</h4>
+                                    <p class="variant-label">White</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-quantity-interface">
+                                <button class="qty-adjust-btn">−</button>
+                                <span class="qty-display-value">1</span>
+                                <button class="qty-adjust-btn">+</button>
+                            </div>
+                            <div class="cart-item-price-sum-remove-wrap">
+                                <span class="cart-item-calculated-price">$249.99</span>
+                                <button class="cart-item-remove-trigger-btn">✕</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-product-item-row">
+                            <div class="cart-item-identity-wrap">
+                                <div class="cart-item-thumbnail-box bg-white">
+                                    <img src="watch ultra 2.webp" alt="Apple Watch Ultra 2">
+                                </div>
+                                <div class="cart-item-text-details">
+                                    <h4>Apple Watch Ultra 2</h4>
+                                    <p class="variant-label">Titanium / Ocean Band</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-quantity-interface">
+                                <button class="qty-adjust-btn">−</button>
+                                <span class="qty-display-value">1</span>
+                                <button class="qty-adjust-btn">+</button>
+                            </div>
+                            <div class="cart-item-price-sum-remove-wrap">
+                                <span class="cart-item-calculated-price">$799.00</span>
+                                <button class="cart-item-remove-trigger-btn">✕</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="checkout-summary-right-pane">
+                <h3 class="summary-card-title">Order Summary</h3>
+
+                <div class="summary-promo-input-field-row">
+                    <input type="text" class="promo-text-input" placeholder="Discount Code">
+                    <button class="promo-apply-action-btn">Apply</button>
+                </div>
+
+                <div class="summary-ledger-financial-metrics-group">
+                    <div class="ledger-row-node">
+                        <span>Subtotal</span>
+                        <span>$1,048.99</span>
+                    </div>
+                    <div class="ledger-row-node">
+                        <span>Shipping</span>
+                        <span class="text-muted-dim">Free</span>
+                    </div>
+                    <div class="ledger-row-node">
+                        <span>Estimated Tax</span>
+                        <span>$84.00</span>
+                    </div>
+                    <hr class="ledger-structural-divider">
+                    <div class="ledger-row-node ledger-total-row-highlight">
+                        <span>Total</span>
+                        <span class="ledger-metric-value-output-bold">$1,132.99</span>
+                    </div>
+                </div>
+
+                <button class="summary-checkout-execution-btn">Proceed to Checkout</button>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="global-footer">
+      <div class="footer-left-block">
+    <div class="footer-left-logo">
+        <img src="ee logo.png" alt="brand-logo">
+    </div>          
+    
+    <div class="footer-text-group">
+        <p class="footer-copyright-text">© 2026 ee Retail. All rights reserved.</p>
+    </div>
+</div>
+        <div class="footer-nav-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+            <a href="#">Shipping</a>
+        </div>
+       <div class="footer-social-tray">
+            <a href="#" class="social-icon-btn"><img src="twitter.png" alt="twitter"></a>
+            <a href="#" class="social-icon-btn"><img src="instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('side-navbar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

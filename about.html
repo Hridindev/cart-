@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ee | Technical Precision & Aesthetic Restraint</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <img src="ee logo.png" alt="ee logo">
+            </div>
+            <div class="nav-links-desktop">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+            <div class="nav-icons">
+                <img src="magnifying-glass.png" alt="Search" class="nav-icon">
+                <a href="cart.html" style="display:inline-block; line-height:0;"><img src="bag.png" alt="Cart" class="nav-icon"></a>
+                <img src="user.png" alt="Account" class="nav-icon">
+                <button class="nav-btn-menu" onclick="toggleSidebar()">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="back-btn-container">
+                <a href="home.html" class="back-btn-link">
+                    <button class="back-btn" aria-label="Go back to home">
+                        <img src="back-arrows.png" alt="back-arrow">
+                    </button>
+                </a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="side-navbar" class="sidebar">
+        <button onclick="toggleSidebar()" class="closeBtn">✕</button>
+        <ul class="mobile-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+    </aside>
+    <div id="overlay" onclick="toggleSidebar()"></div>
+
+    <main class="global-main-container">
+        <header class="about-hero-header">
+            <span class="about-tagline">SINCE 2024</span>
+            <h1>The intersection of technical precision and aesthetic restraint.</h1>
+            <p>We curate the world's most advanced consumer electronics with a clinical eye for design and performance.</p>
+        </header>
+
+        <section class="asymmetric-grid-layout">
+            <div class="showcase-card feature-mission-card">
+                <h3>Our Mission</h3>
+                <p>To simplify the acquisition of sophisticated technology. We believe that your tools should be as beautiful as the work you create with them. At ee, we eliminate the noise of the retail landscape, offering only the essentials of modern excellence.</p>
+                <div class="card-inner-graphic-frame">
+                    <img src="container.svg" alt="Mission Device Grid Illustration">
+                </div>
+            </div>
+
+            <div class="showcase-card feature-retailer-card">
+                <div class="verified-badge-pill">✓</div>
+                <h3>Official Retailer</h3>
+                <p>Direct partnerships with Apple, Teenage Engineering, and Leica ensure 100% authenticity and technical support.</p>
+            </div>
+
+            <div class="showcase-card feature-sustainability-card">
+                <div class="card-header-icon-wrap">
+                    <img src="Icon (1).png" alt="Sustainability Emblem">
+                    <h3>Sustainability</h3>
+                </div>
+                <p>Our commitment goes beyond product curation. We utilize carbon-neutral shipping and 100% recyclable packaging for every order. Precision shouldn't cost the planet.</p>
+                <div class="badge-row-container">
+                    <span class="text-pill-badge">Plastic Free</span>
+                    <span class="text-pill-badge">Net Zero Delivery</span>
+                </div>
+            </div>
+
+            <div class="showcase-card feature-support-card">
+                <h3>Concierge Support</h3>
+                <p>Experience the gold standard of post-purchase care. Our technical specialists are available 24/7 for setup assistance and troubleshooting.</p>
+                <button class="support-action-btn-dark">Connect with a Specialist</button>
+            </div>
+        </section>
+
+        <section class="experience-center-hero-block">
+            <img src="image.png" alt="Physical Showroom Grid" class="experience-bg-cover-media">
+            <div class="experience-blur-overlay-box">
+                <h2>Experience Center</h2>
+                <p>Visit our physical showrooms in Tokyo, Copenhagen, and London for hands-on technical consultation.</p>
+                <a href="#" class="experience-link-arrow">View locations <span class="arrow">→</span></a>
+            </div>
+        </section>
+
+        <section class="principles-statement-block">
+            <h2 class="principles-section-title">Our Core Principles</h2>
+            <div class="principles-grid-row">
+                <div class="principle-column-node">
+                    <span class="principle-sequence-index">01</span>
+                    <h3>Curation</h3>
+                    <p>We only list products we use ourselves. If it doesn't meet our rigorous aesthetic and functional standard, it isn't here.</p>
+                </div>
+                <div class="principle-column-node">
+                    <span class="principle-sequence-index">02</span>
+                    <h3>Clarity</h3>
+                    <p>Technical specs delivered without jargon. We provide the information you actually need to make an informed decision.</p>
+                </div>
+                <div class="principle-column-node">
+                    <span class="principle-sequence-index">03</span>
+                    <h3>Continuity</h3>
+                    <p>Software updates, firmware support, and trade-in programs that ensure your technology evolves with you.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="global-footer">
+      <div class="footer-left-block">
+    <div class="footer-left-logo">
+        <img src="ee logo.png" alt="brand-logo">
+    </div>          
+    
+    <div class="footer-text-group">
+        <p class="footer-copyright-text">© 2026 ee Retail. All rights reserved.</p>
+    </div>
+</div>
+        <div class="footer-nav-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+            <a href="#">Shipping</a>
+        </div>
+       <div class="footer-social-tray">
+            <a href="#" class="social-icon-btn"><img src="twitter.png" alt="twitter"></a>
+            <a href="#" class="social-icon-btn"><img src="instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('side-navbar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
