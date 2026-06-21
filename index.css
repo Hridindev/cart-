@@ -1352,6 +1352,7 @@ body {
     flex-direction: column;
     gap: 16px;
     margin-bottom: 24px;
+    color: #2d3135;
 }
 
 .ledger-row-node {
@@ -1373,11 +1374,12 @@ body {
 
 .text-muted-dim {
     opacity: 0.6;
+    color: red;
 }
 
 .ledger-structural-divider {
     border: none;
-    border-top: 1px solid #edf0f2;
+    border-top: 1px solid #717578;
     margin: 4px 0;
 }
 
